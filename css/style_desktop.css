@@ -1,4 +1,4 @@
-@media (min-width:750px) {
+@media (min-width:760px) {
 
 .container {
     padding-left:50px;
@@ -8,7 +8,7 @@
 .container--top {
     align-items:center;
     justify-content:space-between;
-    flex-wrap:nowrap;
+	flex-wrap:nowrap;
 }
 
 .container--footer {
@@ -23,22 +23,26 @@
 
 .header-top {
 	height:80px;
+	justify-content:space-between;
 }
 
 .header__logo {
-    width:160px;
+	order:0;
+	flex:0 0 160px;
     height:80px;
 }
 
 .header__address {
-    order:0;
+	order:1;
+	flex:0 1 auto;
     font-size: 14px;
-
 }
 
 .header__phone {
+	order:2;
+	flex:0 0 auto;
     font-size:20px;
-    align-items:flex-end;
+
 }
 
 .main {
